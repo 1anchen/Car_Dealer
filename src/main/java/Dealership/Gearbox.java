@@ -1,4 +1,7 @@
 package Dealership;
 
-public class Gearbox {
+public enum Gearbox {
+    MANUAL,
+    AUTOMATIC,
+    DUAL,
 }
