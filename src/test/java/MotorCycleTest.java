@@ -13,7 +13,7 @@ public class MotorCycleTest {
 
     @Before
     public void before(){
-        this.motorCycle = new MotorCycle(5000,"white",engine, gearbox,2);
+        this.motorCycle = new MotorCycle(5000,"white",Engine.DIESEL, Gearbox.MANUAL,2);
 
     }
 
@@ -31,13 +31,13 @@ public class MotorCycleTest {
 
     @Test
     public void canGetEngine(){
-        assertEquals(engine,motorCycle.getEngine());
+        assertEquals(Engine.DIESEL,motorCycle.getEngine());
 
     }
 
     @Test
     public void canGetGearbox(){
-        assertEquals(gearbox,motorCycle.getGearbox());
+        assertEquals(Gearbox.MANUAL,motorCycle.getGearbox());
 
     }
 

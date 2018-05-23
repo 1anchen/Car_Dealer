@@ -17,8 +17,8 @@ public class DealerTest {
 
     @Before
     public void before() {
-        this.car = new Car(100000, "red", engine, gearbox, 4);
-        this.motorCycle = new MotorCycle(50000, "white", engine, gearbox, 2);
+        this.car = new Car(100000, "red", Engine.ELECTRIC, Gearbox.AUTOMATIC, 4);
+        this.motorCycle = new MotorCycle(50000, "white", Engine.ELECTRIC, Gearbox.AUTOMATIC, 2);
         this.dealer = new Dealer();
         this.customer = new Customer(500000);
 

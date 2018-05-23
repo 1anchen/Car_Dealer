@@ -14,7 +14,7 @@ public class CarTest {
 
     @Before
     public void before(){
-        this.car = new Car(10000,"red",engine, gearbox,4);
+        this.car = new Car(10000,"red",Engine.ELECTRIC, Gearbox.AUTOMATIC,4);
 
     }
 
@@ -32,13 +32,13 @@ public class CarTest {
 
     @Test
     public void canGetEngine(){
-        assertEquals(engine,car.getEngine());
+        assertEquals(Engine.ELECTRIC,car.getEngine());
 
     }
 
     @Test
     public void canGetGearbox(){
-        assertEquals(gearbox,car.getGearbox());
+        assertEquals(Gearbox.AUTOMATIC,car.getGearbox());
 
     }
 
