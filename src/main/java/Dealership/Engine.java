@@ -1,4 +1,4 @@
 package Dealership;
 
-public class Engine {
+public enum Engine {
 }
